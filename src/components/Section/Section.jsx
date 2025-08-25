@@ -1,4 +1,5 @@
 import Albums from "../Albums/Albums";
+import Songs from "../Songs/Songs";
 
 function Section() {
   return (
@@ -8,6 +9,9 @@ function Section() {
 
       {/*New Albums */}
       <Albums url={"https://qtify-backend-labs.crio.do/albums/new"} title="New Albums" key="New Albums" />
+
+      {/* Songs */}
+      <Songs />
     </section>
   );
 }
