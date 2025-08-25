@@ -34,7 +34,7 @@ const Albums = ({ url, title }) => {
       <Box display="flex" justifyContent="space-between" alignItems="center" p={2}>
         <h1 className={styles.heading}>{title}</h1>
         <button className={styles.button} onClick={() => setCollapsed(!collapsed)}>
-          {collapsed ? "Collapse" : "Show All"}
+          {!collapsed ? "Collapse" : "Show All"}
         </button>
       </Box>
 
