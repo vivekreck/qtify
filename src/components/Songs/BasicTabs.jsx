@@ -44,7 +44,7 @@ export default function BasicTabs({ tabsData }) {
 
   useEffect(() => {
     axios
-      .get("https://qtify-backend-labs.crio.do/songs")
+      .get("https://qtify-backend.labs.crio.do/songs")
       .then((response) => {
         setLoading(false);
         setData(response?.data || []);

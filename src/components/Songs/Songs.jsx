@@ -13,7 +13,7 @@ const Songs = () => {
 
   useEffect(() => {
     axios
-      .get("https://qtify-backend-labs.crio.do/genres")
+      .get("https://qtify-backend.labs.crio.do/genres")
       .then((response) => {
         setLoading(false);
         setTabsData(response?.data?.data || []);
