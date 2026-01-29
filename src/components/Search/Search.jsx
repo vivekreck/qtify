@@ -38,7 +38,7 @@ const Listbox = styled("ul")(({ theme }) => ({
 }));
 
 function Search({ searchData, placeholder }) {
-  const { getRootProps, getInputLabelProps, value, getInputProps, getListboxProps, getOptionProps, groupedOptions } =
+  const { getRootProps, value, getInputProps, getListboxProps, getOptionProps, groupedOptions } =
     useAutocomplete({
       id: "use-autocomplete-demo",
       options: searchData || [],
